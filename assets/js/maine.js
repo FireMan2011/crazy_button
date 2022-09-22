@@ -6,14 +6,16 @@ const translate = [
     "translate(200px)",
 ]
 
-const item = () => {
+const itemNum = () => {
     return Math.floor(Math.random() * 4);
 }
 
 const duplicate = (prev, next) => {
-    console.log(prev == next);
-    console.log(prev);
-    console.log(next);
+    return prev === next
+}
+
+const changePosition = (itemNum, position) => {
+    itemNum.style.transform = translate[position];
 }
 
 button_1.onmouseover = () => {
@@ -33,17 +35,17 @@ button_1.onmouseover = () => {
 
     // button_1.classList.toggle("active");
 
-    // let position = item();
+    let position = itemNum();
+    let dup = duplicate(translate[position], button_1.style.transform);
 
-    // if (duplicate(translate[position], button_1.style.transform)) {
-    //     position = item();
-    //     console.log(position);
-    // } else {
-    //     button_1.style.transform = translate[position];
-    //     // console.log(duplicate(translate[position], button_1.style.transform));
-    // }
+    while (dup) {
+        position = itemNum();
+        dup = duplicate(translate[position], button_1.style.transform);
+    }
+
+    changePosition(button_1, position);
 }
 
-button_1.onmouseover = () => {
-    button_1.classList.toggle("active");
-}
+// button_1.onmouseover = () => {
+//     button_1.classList.toggle("active");
+// }
