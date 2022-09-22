@@ -1,3 +1,7 @@
+body {
+  text-align: center;
+}
+
 .content {
   width: 50%;
   margin: 50px auto;
@@ -13,4 +17,8 @@
   margin: 12px auto;
   padding: 12px;
   border: 1px dashed green;
+}
+
+.active {
+  transform: translate(150px);
 }
