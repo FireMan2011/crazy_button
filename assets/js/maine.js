@@ -70,6 +70,5 @@ button_1.onmouseover = () => {
 }
 
 button_1.onmousedown = () => {
-    console.log("тицьнули");
     crazyButton();
 }
