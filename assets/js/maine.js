@@ -49,7 +49,7 @@ const crazyButton = () => {
     //     // Якщо клас відсутній то додаємо його
     //     button_1.classList.add("active")
     // }
-
+    // Робимо те саме? що описано вище однією стрічкою коду
     // button_1.classList.toggle("active");
 
     let positionX = itemNum(translateX);
@@ -73,7 +73,3 @@ button_1.onmousedown = () => {
     console.log("тицьнули");
     crazyButton();
 }
-
-// button_1.onmouseover = () => {
-//     button_1.classList.toggle("active");
-// }
