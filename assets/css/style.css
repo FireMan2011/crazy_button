@@ -3,7 +3,8 @@ body {
 }
 
 .content {
-  width: 50%;
+  width: 1000px;
+  height: 650px;
   margin: 50px auto;
   border: 1px solid black;
   padding: 20px;
@@ -11,6 +12,7 @@ body {
   border-radius: 7px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .btn {
